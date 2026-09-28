@@ -17,7 +17,7 @@ namespace Ifsatser
                 {
                 Console.WriteLine("Har du ett giltigt körkort? (ja/nej)");
                 string hasLicenseInput = Console.ReadLine();
-                if (age >= 18 && hasLicenseInput.ToLower() == "ja")
+                if (hasLicenseInput.ToLower() == "ja")
                 {
                     Console.WriteLine("Du kan lagligt köra bil.");
                 }
@@ -27,9 +27,8 @@ namespace Ifsatser
                 }
             }
             else
+            { 
                 Console.WriteLine("Du är inte tillräckligt gammal för att köra bil.");
-            {
-
             }
         }
     }
